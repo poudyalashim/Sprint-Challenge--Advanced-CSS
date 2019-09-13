@@ -200,8 +200,9 @@ footer {
 }
 .home .space-images {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
+  border: 1px solid red;
 }
 .home .space-images img {
   width: 28%;
@@ -209,49 +210,84 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  border: 1px solid red;
 }
-.home .walk .walk-text {
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
+  }
+}
+.walk .walk-text {
   width: 50%;
+  border: 1px solid red;
 }
-.home .walk .walk-text h3 {
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
+}
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
+.walk .walk-text .btn button {
   padding: 7px 20px;
   color: white;
   background: black;
-  font-size: 2.4rem;
+  font-size: 2.4;
   border-radius: 6px;
-  border: 1px solid red;
 }
-.home .walk .walk-text .btn button:hover {
-  background: orange;
+.walk .walk-text .btn button:hover {
   color: red;
+  background: orange;
 }
-.home .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .walk .walk-img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .space-images .sky {
+    display: none;
+  }
+  .space-images .launch {
+    display: none;
+  }
+  .intro img {
+    width: 100%;
+    border: 1px solid red;
+  }
 }

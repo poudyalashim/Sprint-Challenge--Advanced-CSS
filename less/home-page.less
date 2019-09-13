@@ -17,6 +17,9 @@
   .space-images {
     .box();
      width: 100%;
+     border: 1px solid red;
+
+  
      
 
     img {
@@ -24,10 +27,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      
-      // @media @phone{
-      //   display: none;
-      // }
+
+      @media @phone {
+        width: 100%;
+      }
+    
   }
   
   }
@@ -50,18 +54,20 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .box();
-    // display: flex;
-    // justify-content: center;
+    border: 1px solid red;
+    
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
       border: 1px solid red;
 
-    @media @phone{
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
+      @media @phone {
+        width: 100%;
+      }
+      
       h3 {
         margin-bottom: 10px;
       }
@@ -76,7 +82,7 @@
         .btn-fontborder(2.4, 6px);
 
          &:hover{
-          .btn-cb(red, orange;)
+          .btn-cb(red,orange);
           // background: orange;
           // color: red;
         }
@@ -86,14 +92,37 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      // border: 1px solid red;
+
+      @media @phone {
+        width: 100%;
+        margin-bottom: 25px;
+        
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        border: 1px solid red;
+
+        
   
       }
     }
   }
-}// home
+// home
 
+@media @phone {
+  .space-images .sky {
+    display: none;
+  }
+  .space-images .launch {
+    display: none;
+  }
+
+  .intro img {
+    width: 100%;
+    border: 1px solid red;
+  }
+}
