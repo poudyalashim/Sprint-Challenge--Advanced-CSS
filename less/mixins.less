@@ -1,1 +1,20 @@
 // Mixins Here
+
+.box(){
+    display: flex;
+    justify-content: center;
+}
+
+.allblack(){
+    color: black;
+}
+
+.btn-cb(@color, @back){
+    color: @color;
+    background: @back;
+}
+
+.btn-fontborder(@font, @border){
+    font-size: @font;
+    border-radius: @border;
+}
