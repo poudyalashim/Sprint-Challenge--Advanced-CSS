@@ -161,9 +161,8 @@ p {
   margin: 0 auto;
 }
 .nav-section {
-  border: 1px solid red;
   margin-top: 20px;
-  background: #DCDCDC;
+  background: #FCFAF7;
 }
 .nav-section h1 {
   display: flex;
@@ -292,6 +291,5 @@ footer {
   }
   .intro img {
     width: 100%;
-    border: 1px solid red;
   }
 }

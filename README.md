@@ -1,4 +1,5 @@
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
+Ashim Poudyal
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
@@ -34,13 +35,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive Design - Adaptive web design detects the screen size and loads the appropriate layout for the device. A different website is created for each device used to see the site.
+
+Responsive Design - adapts to any device, user behavior and device orientation, uses CSS media queries to change the look of the site based on different screen sizes. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first - first building mobile layout and gradually tablet and desktop view. Mobile first is building from smaller screen to bigger screen.
+
+desktop first - building desktop layout first and grdually tablet and mobile design. Desktop means building from bigger screen size to smaller screen size. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Font-size: 62.5% in the 'html' makes the default font size for your entire website 10px and it easy to do math because 1rem=10px. Based on 1 rem = 10px, it easy for you to set your fontsize where needed using rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. 
+You can create various files to organize your css code and preprocessor will help compile all these files in to CSS. You can also use features like variables, imports, mixin, nesting etc to help you organize your code and it simply makes coding lot better. For example, Nesting allows you to nest child selctors witin their parent selector, this means you can store all style rules belonging to the same parent. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept in preprocessing is codes are divided in different files (mixin.less, navigation.less), it's easy to find when needed and everything processed to CSS orignal file at the end. The concept that gives me trouble mixins because lack of practice. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
