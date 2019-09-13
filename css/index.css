@@ -202,7 +202,6 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
 }
 .home .space-images img {
   width: 28%;
@@ -230,7 +229,6 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .walk {
@@ -239,7 +237,6 @@ footer {
 }
 .walk .walk-text {
   width: 50%;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .walk .walk-text {
@@ -251,13 +248,21 @@ footer {
 }
 .walk .walk-text p {
   margin-bottom: 26px;
+  color: black;
 }
 .walk .walk-text .btn button {
   padding: 7px 20px;
   color: white;
   background: black;
-  font-size: 2.4;
+  font-size: 2.4rem;
   border-radius: 6px;
+}
+@media (max-width: 500px) {
+  .walk .walk-text .btn button {
+    padding: 3% 45%;
+    font-size: 2rem;
+    border-radius: 6px;
+  }
 }
 .walk .walk-text .btn button:hover {
   color: red;
@@ -277,7 +282,6 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .space-images .sky {
